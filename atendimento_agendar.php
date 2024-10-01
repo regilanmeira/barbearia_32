@@ -21,7 +21,7 @@ and open the template in the editor.
 
         <!-- CORPO DA PÁGINA -->
 
-        <form name="formAtendimento" action="" method="post">
+        <form name="formAtendimento" action="atendimento_salvar.php" method="post">
             <div id="body">
 
                 <h1><span>Agendar atendimento</span></h1>
@@ -39,7 +39,7 @@ and open the template in the editor.
                                 include "conexao_bd.php";
                                 //PASSO 2: Criar o comando de busca dos serviços - SELECT
                                 $sql = "SELECT * FROM servico ORDER BY descricao";
-                                //PASSO 3: Executar e trazer os resultados
+                                //PASSO 3: Executar e trazer os resultados 
                                 $resultado = retornarDados($sql);
                                 //PASSO 4: Capturar cada linha de dado e adicionar
                                 //uma option (ITEM) da select
